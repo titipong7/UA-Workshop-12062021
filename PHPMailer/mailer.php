@@ -11,8 +11,8 @@ $mail->CharSet = "utf-8";
 $mail->ContentType = 'text/html';
 $mail->Encoding = 'base64';
 // $mail->Username = 'ฐิติพงศ์@คน.ไทย';
-$mail->Username = 'titipong@kon.in.th';
-$mail->Password = 'p0ky_fIMdPa-';
+$mail->Username = '';
+$mail->Password = '';
 // $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Enable TLS encryption; PHPMailer::ENCRYPTION_SMTPS also accepted
 $mail->SMTPSecure = "tls"; // Enable TLS encryption; PHPMailer::ENCRYPTION_SMTPS also accepted
 $mail->Port = 587; // TCP port to connect to
@@ -26,9 +26,9 @@ $mail->setFrom('ติดต่อ@คน.ไทย');
 $mail->addAddress('ฐิติพงศ์@xn--42c6b.xn--o3cw4h');
 
 
-$mail->Subject = '1648Here is the subject'; 
+$mail->Subject = '1648Here is the subject';
 $mail->Body    = 'This is the body.';
- 
+
 if($mail->send()){
     echo 'Message has been sent';
 }else{
@@ -51,7 +51,7 @@ if($mail->send()){
 
 // $mail->Subject = '1646Here is the subject';
 // $mail->Body    = 'This is the body.';
- 
+
 // if($mail->send()){
 //     echo 'Message has been sent';
 // }else{
