@@ -1370,7 +1370,6 @@ class PHPMailer
             default:
                 // return filter_var($address, FILTER_VALIDATE_EMAIL) !== false;
                 return (bool) preg_match("/^[ก-๙a-zA-Z0-9_+&*-]+(?:\.[ก-๙a-zA-Z0-9_+&*-]+)*@(?:[ก-๙a-zA-Z0-9-]+\.)+[ก-๙a-zA-Z]{2,16}$/u", $address);
-
         }
     }
 
